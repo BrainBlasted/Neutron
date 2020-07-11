@@ -29,6 +29,9 @@ def compile_module(creator_name, root, mods_folder, mod_name=None, use_creator_n
     shutil.copyfile(ts4script, ts4script_mods)
 ```
 
+Once this change is made, rename the checkout of Neutron to "My Script Mods",
+and replace the existing "My Script Mods" folder.
+
 If you want PyCharm to be able to auto-fill and handle imports between modules,
 you'll need to add the "Scripts" folder of each module as a source within your
 workspace settings.
