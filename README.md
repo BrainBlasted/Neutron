@@ -29,6 +29,10 @@ def compile_module(creator_name, root, mods_folder, mod_name=None, use_creator_n
     shutil.copyfile(ts4script, ts4script_mods)
 ```
 
+If you want PyCharm to be able to auto-fill and handle imports between modules,
+you'll need to add the "Scripts" folder of each module as a source within your
+workspace settings.
+
 # License
 
 Neutron is licensed under the Creative Commons Zero public domain license. You can re-use all code within this mod
