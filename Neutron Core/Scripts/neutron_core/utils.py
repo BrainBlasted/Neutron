@@ -5,6 +5,11 @@ from sims4.localization import LocalizationHelperTuning
 from ui.ui_dialog_notification import UiDialogNotification
 
 
+class ParametrizedLocalizedString:
+    def __init__(self, string, *args):
+        self.localized_string = lambda **_: _create_localized_string(string, *[_create_localized_string(arg) for arg in args])
+
+
 def injector(target_object, target_function_name):
     def inject(target_function, new_function):
         @wraps(target_function)
